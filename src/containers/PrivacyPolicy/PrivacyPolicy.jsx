@@ -1,15 +1,17 @@
 import React from "react";
 import styles from "./PrivacyPolicy.module.css";
 
+import arrow from "../../resources/arrow.svg";
 import icon from "../../resources/logo_black.svg";
 import { NavLink } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
-    <div className={styles["body"]}>
-     <NavLink to="/"><h1>На главную</h1>
+    <div className={styles["body-text"]}>
+     <NavLink to="/"><button className={styles["back-btn"]}><img src={arrow}/></button>
        </NavLink> 
-      <h1>Политика в отношении обработки персональных данных</h1>
+       <div  className={styles["text-main"]}>
+       <h1>Политика в отношении обработки персональных данных</h1>
       <h2>1. Общие положения</h2>
       Настоящая политика обработки персональных данных составлена в соответствии
       с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных
@@ -228,6 +230,8 @@ const PrivacyPolicy = () => {
       Политики в свободном доступе расположена в сети Интернет по адресу
       https://kristinakaruna.ru/politica .</li>
       </ul>
+       </div>
+    
     </div>
   );
 };
