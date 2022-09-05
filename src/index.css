@@ -9,6 +9,7 @@
   --cards-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
 
   --ff: TNR;  
+  --ff-Pholosopher: Phl;
 
   --fs-b: 16px;
   --fs-h1: 24px;
@@ -20,6 +21,17 @@
   src: url("./resources/TNR.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Phl";
+  src: url("./resources/Philosopher-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Arsenal';
+  src: url ("./resources/arsenal-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
   margin: 0;
@@ -34,14 +46,21 @@ body {
 
 h1 {
   font-size: var(--fs-h1);
-  font-family: "TNR";
+  font-family: "Phl";
   font-style: bold;
+  letter-spacing: -0.065em;
+  width: 800px;
+  font-size: 32px;
+
 }
 
 h2{
   font-size: var(--fs-b);
-  font-family: "TNR";
-  font-weight: 100;
+  font-family: "Arsenal";
+  line-height: 130%;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+
 }
 
 *:before, *:after {
@@ -90,46 +109,3 @@ html, body {
   height: 100%;
 }
 
-
-
-/*# sourceMappingURL=main.css.map */
-
-/*==========  Desktop First  ========== */
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /* */
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /* */
-  .container{
-    background-color: red;
-  }
-
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /* */
-}
-/*==========  Mobile First  ========== */
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /* */
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /* */
-}
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /* */
-}
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /* */
-}
-
-/*# sourceMappingURL=adaptive.css.map */

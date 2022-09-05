@@ -9,21 +9,3 @@
     align-content: center;
     height: 100vh;
 }
-
-.item-img{
-    display: flex;
-    height: 100vh;
-}
-
-.img-left{
-    width: 50vh;
-}
-.content{
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    min-width: 320px;
-    height: inherit;
-}
