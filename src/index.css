@@ -34,13 +34,13 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 !important;
   color: var(--dark-brown-1);
   background-color: var(--white);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
-
+  height: 100vh;
 
 }
 
@@ -59,7 +59,7 @@ h2{
   font-family: "Arsenal";
   line-height: 130%;
   font-weight: 400;
-  letter-spacing: 0.035em;
+  letter-spacing: 0.025em;
 
 }
 
@@ -109,3 +109,12 @@ html, body {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  h1{
+      font-size: 24px;
+  }
+
+  .item-2{
+      margin: 0px 16px;
+  }
+}
